@@ -14,14 +14,16 @@ Summary: Accurate calculations and visualization of precision-recall and ROC (Re
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-precrec-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-precrec-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-precrec-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-precrec-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-precrec-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-precrec-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-precrec-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-precrec-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-precrec-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-precrec-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-precrec-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-precrec-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-precrec/badges/version.svg)](https://anaconda.org/conda-forge/r-precrec)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-precrec/badges/downloads.svg)](https://anaconda.org/conda-forge/r-precrec)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--precrec-green.svg)](https://anaconda.org/conda-forge/r-precrec) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-precrec.svg)](https://anaconda.org/conda-forge/r-precrec) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-precrec.svg)](https://anaconda.org/conda-forge/r-precrec) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-precrec.svg)](https://anaconda.org/conda-forge/r-precrec) |
 
 Installing r-precrec
 ====================
