@@ -16,7 +16,8 @@ source:
   sha256: 6924fa66949d35b404239d0487ce236e6334e9b7416b5e28fd1045893aa1f74e
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -25,15 +26,18 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('cxx') }}        # [unix]
+    - {{ compiler('m2w64_cxx') }}  # [win]
+  host:
     - r-base
     - r-rcpp
     - r-assertthat >=0.1
     - r-data.table >=1.10.4
     - r-ggplot2 >=2.1.0
     - r-gridextra >=2.0.0
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
 
   run:
     - r-base
@@ -42,7 +46,6 @@ requirements:
     - r-data.table >=1.10.4
     - r-ggplot2 >=2.1.0
     - r-gridextra >=2.0.0
-    - libgcc  # [not win]
 
 test:
   commands:
@@ -55,7 +58,7 @@ about:
   summary: Accurate calculations and visualization of precision-recall and ROC (Receiver Operator
     Characteristics) curves.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}\/lib\/R\/share\/licenses\/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
   license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 extra:
    recipe-maintainers:
