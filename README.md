@@ -3,7 +3,7 @@ About r-precrec
 
 Home: http://takayasaito.github.io/precrec, https://github.com/takayasaito/precrec
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-precrec-feedstock/blob/master/LICENSE.txt)
 
