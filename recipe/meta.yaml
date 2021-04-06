@@ -1,4 +1,4 @@
-{% set version = "0.12.1" %}
+{% set version = "0.12.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/precrec_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/precrec/precrec_{{ version }}.tar.gz
-  sha256: 6d20e55ab9c4818632f25894a74f784065dcf960ec301da36fc13bc5f28fa401
+  sha256: 7c1ecb6f13bd210b5013493498068c0ba98748d3a7da4018b3a8b11d538ae5db
 
 build:
   merge_build_host: true  # [win]
