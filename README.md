@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-precrec-feeds
 About r-precrec
 ---------------
 
-Home: http://takayasaito.github.io/precrec, https://github.com/takayasaito/precrec
+Home: http://takayasaito.github.io/precrec
 
 Package license: GPL-3.0-only
 
 Summary: Accurate calculations and visualization of precision-recall and ROC (Receiver Operator Characteristics) curves.
+
+Development: https://github.com/takayasaito/precrec
 
 About r-precrec
 ---------------
 
-Home: http://takayasaito.github.io/precrec, https://github.com/takayasaito/precrec
+Home: http://takayasaito.github.io/precrec
 
 Package license: GPL-3.0-only
 
 Summary: Accurate calculations and visualization of precision-recall and ROC (Receiver Operator Characteristics) curves.
+
+Development: https://github.com/takayasaito/precrec
 
 Current build status
 ====================
