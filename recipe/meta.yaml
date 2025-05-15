@@ -1,4 +1,4 @@
-{% set version = "0.14.4" %}
+{% set version = "0.14.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/precrec_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/precrec/precrec_{{ version }}.tar.gz
-  sha256: e81f530dcfecce608208e2e35ea685b9e5241faea0c6ceb5129b7c7760b91b0e
+  sha256: 4139dfa0e68ac14bcbc9b76c493f9bdbfc02fdbf6df204e438fef0b5aafb23d8
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
