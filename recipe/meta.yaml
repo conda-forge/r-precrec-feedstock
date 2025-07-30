@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -32,19 +36,21 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rcpp >=0.12.2
-    - r-assertthat >=0.1
+    - r-rcpp >=1.0.0
+    - r-assertthat >=0.2
     - r-data.table >=1.10.4
-    - r-ggplot2 >=2.1.0
+    - r-ggplot2 >=3.0.0
     - r-gridextra >=2.0.0
+    - r-rlang >=1.0.0
     - r-withr >=2.3.0
   run:
     - r-base
-    - r-rcpp >=0.12.2
-    - r-assertthat >=0.1
+    - r-rcpp >=1.0.0
+    - r-assertthat >=0.2
     - r-data.table >=1.10.4
-    - r-ggplot2 >=2.1.0
+    - r-ggplot2 >=3.0.0
     - r-gridextra >=2.0.0
+    - r-rlang >=1.0.0
     - r-withr >=2.3.0
 
 test:
